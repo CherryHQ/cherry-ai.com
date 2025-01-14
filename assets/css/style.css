@@ -40,7 +40,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
-/***
+@import url('font-awesome.css');
+
+/*** 
 
 ====================================================================
 	Reset
@@ -54,7 +56,7 @@
 	outline:none;
 }
 
-/***
+/*** 
 
 ====================================================================
   Global Settings
@@ -111,7 +113,7 @@ input,button,select,textarea{
 ::-ms-input-placeholder { /* Edge 12-18 */
 	color: #6A6A6A;
 }
-
+  
 ::placeholder {
 	color: #6A6A6A;
 }
@@ -156,7 +158,7 @@ p{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;
+	margin:0px;	
 }
 
 .link-box.client_btn {
@@ -183,7 +185,7 @@ ul,li{
 }
 
 .centered{
-	text-align:center;
+	text-align:center;	
 }
 
 .theme-btn.four.btn-bg-color {
@@ -336,7 +338,7 @@ ul,li{
 	z-index: 9999999;
 	background: #CB38FF;
   }
-
+  
   .preloader-close{
 	position: fixed;
 	z-index: 99999999;
@@ -353,12 +355,12 @@ ul,li{
 	top: 30px;
 	font-weight: 400;
   }
-
+  
   .handle-preloader .animation-preloader {
 	position: absolute;
 	z-index: 100;
   }
-
+  
   .handle-preloader .animation-preloader .spinner{
 	animation: spinner 1s infinite linear;
 	border-radius: 50%;
@@ -366,12 +368,12 @@ ul,li{
 	margin: 0 auto 45px auto;
 	width: 150px;
   }
-
+  
   .handle-preloader .animation-preloader .txt-loading {
 	text-align: center;
 	user-select: none;
   }
-
+  
   .handle-preloader .animation-preloader .txt-loading .letters-loading:before{
 	animation: letters-loading 4s infinite;
 	content: attr(data-text-preloader);
@@ -380,7 +382,7 @@ ul,li{
 	top:0;
 	position: absolute;
   }
-
+  
   .handle-preloader .animation-preloader .txt-loading .letters-loading{
 	font-family: var(--title-font);
 	font-weight: 500;
@@ -394,7 +396,7 @@ ul,li{
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
   }
-
+  
   .handle-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {animation-delay: 0.2s;}
   .handle-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {animation-delay: 0.4s;}
   .handle-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {animation-delay: 0.6s;}
@@ -409,21 +411,21 @@ ul,li{
 	top: 0;
 	width: calc(50% + 1px);
   }
-
+  
   .preloader .loaded .animation-preloader {
 	opacity: 0;
 	transition: 0.3s ease-out;
   }
-
+  
   .handle-preloader .animation-preloader .txt-loading .letters-loading:before{
 	color: var(--white-color);
   }
-
+  
   .handle-preloader .animation-preloader .spinner{
 	border: 3px solid var(--white-color);
-	border-top-color: rgba(255, 255, 255, 0.5);
+	border-top-color: rgba(255, 255, 255, 0.5); 
   }
-
+  
   /* AnimaciÃƒÆ’Ã‚Â³n del preloader */
   @keyframes spinner {
 	to {
@@ -437,14 +439,14 @@ ul,li{
 	  opacity: 0;
 	  transform: rotateY(-90deg);
 	}
-
+  
 	25%,
 	50% {
 	  opacity: 1;
 	  transform: rotateY(0deg);
 	}
   }
-
+  
   @media screen and (max-width: 767px) {
 	.handle-preloader .animation-preloader .spinner {
 	  height: 8em;
@@ -465,7 +467,7 @@ ul,li{
 img{
 	display:inline-block;
 	max-width:100%;
-	height:auto;
+	height:auto;	
 }
 
 
@@ -491,7 +493,7 @@ img{
     -o-animation-iteration-count: infinite;
     -o-animation-timing-function: linear;
   }
-
+  
   .float-bob-x{
     animation-name: float-bob-x;
     animation-duration: 15s;
@@ -558,7 +560,7 @@ img{
 	border-radius: 50%;
 	background-color: lightgrey;
 }
-
+  
 .percentage {
     position: absolute;
     right: 155px;
@@ -581,7 +583,7 @@ img{
 }
 
 
-/***
+/*** 
 
 ====================================================================
 	Social Icon One
@@ -623,7 +625,7 @@ img{
 
 
 
-/***
+/*** 
 
 ====================================================================
 	Scroll To Top style
