@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Cherry Studio 下载页面</title>
+    
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    
+    <!-- 基础设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF5F5F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- SEO 基础信息 -->
+    <meta name="description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta name="keywords" content="Cherry Studio, AI助手, LLM, GPT, 人工智能, macOS, Windows, iOS">
+    <meta name="author" content="Cherry Studio Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cherry-ai.com/download">
+    <meta property="og:title" content="Cherry Studio - 全能的AI助手">
+    <meta property="og:description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta property="og:image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+    <meta property="og:site_name" content="Cherry Studio">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cherry Studio AI 助手界面预览">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CherryStudioAI">
+    <meta name="twitter:creator" content="@CherryStudioAI">
+    <meta name="twitter:title" content="Cherry Studio - 全能的AI助手">
+    <meta name="twitter:description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta name="twitter:image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+    <meta name="twitter:image:alt" content="Cherry Studio AI 助手界面预览">
+    
+    <!-- 微信分享 -->
+    <meta itemprop="name" content="Cherry Studio - 全能的AI助手">
+    <meta itemprop="description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta itemprop="image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+    
+    <!-- QQ分享 -->
+    <meta name="qq:card" content="article">
+    <meta name="qq:title" content="Cherry Studio - 全能的AI助手">
+    <meta name="qq:description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta name="qq:image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+
+    <!-- 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- 基础样式表 -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/icomoon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- 模块样式 -->
+    <link href="assets/css/module-css/header.css" rel="stylesheet">
+    <link href="assets/css/module-css/footer.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- 视口设置 -->
+    <meta data-rh="true" property="og:description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta data-rh="true" name="description" content="Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。">
+    <meta data-rh="true" name="docsearch:docusaurus_tag" content="default">
+    <meta data-rh="true" name="docsearch:language" content="en">
+    <meta data-rh="true" name="docusaurus_tag" content="default">
+    <meta data-rh="true" name="docusaurus_locale" content="en">
+    <meta data-rh="true" property="og:locale" content="en">
+    <meta data-rh="true" property="og:url" content="https://cherry-ai.com/">
+    <meta data-rh="true" name="twitter:image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+    <meta data-rh="true" property="og:image" content="https://cherry-ai.com/assets/images/social-card.jpg">
+    <meta data-rh="true" name="twitter:card" content="summary_large_image">
+    <meta data-rh="true" property="og:title" content="Cherry Studio">
+    <meta data-rh="true" property="og:type" content="website">
+    <meta data-rh="true" property="og:site_name" content="Cherry Studio">
+    <meta data-rh="true" property="og:image:width" content="1200">
+    <meta data-rh="true" property="og:image:height" content="630">
+
+    <!-- 样式表 -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/icomoon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- 其他必要的样式 -->
+    <link href="assets/css/module-css/header.css" rel="stylesheet">
+    <link href="assets/css/module-css/footer.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- 自定义样式 -->
+    <style>
+        /* 加载动画样式 */
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.6s ease;
+        }
+
+        .preloader.loaded {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader .loader {
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
+
+        .preloader .loader:before,
+        .preloader .loader:after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            animation: pulse 1.8s ease-in-out infinite;
+            transform-origin: center center;
+        }
+
+        .preloader .loader:before {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 95, 95, 0.1);
+            animation-delay: 0.2s;
+        }
+
+        .preloader .loader:after {
+            width: 75%;
+            height: 75%;
+            background: rgba(255, 95, 95, 0.3);
+            top: 12.5%;
+            left: 12.5%;
+            animation-delay: 0.4s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.6);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(0.6);
+                opacity: 1;
+            }
+        }
+
+        /* 页面内容初始隐藏 */
+        .page-wrapper {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .page-wrapper.loaded {
+            opacity: 1;
+        }
+
+        /* 下载页面的自定义样式 */
+        .download-section {
+            padding: 120px 0;
+            background: linear-gradient(180deg, #FFF6F6 0%, #FFFFFF 100%);
+        }
+
+        .download-section .auto-container {
+            max-width: 1000px;
+        }
+
+        /* 版本信息样式 */
+        .version-info {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .version-info h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .version-info p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* 下载按钮区域 */
+        .download-buttons {
+            text-align: center;
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+        }
+
+        .system-info {
+            display: none; /* 初始隐藏，等待 JS 加载完成后显示 */
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+            color: #666;
+        }
+
+        .system-info.loaded {
+            display: block;
+        }
+
+        .system-info p {
+            margin: 5px 0;
+            font-size: 15px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .system-info strong {
+            color: #111;
+            font-weight: 500;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .download-buttons .theme-btn {
+            font-size: 18px;
+            padding: 15px 50px;
+            background: linear-gradient(270deg, #FF5F5F 0%, #FF8F8F 100%);
+            border-radius: 50px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+
+        .download-buttons .theme-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 95, 95, 0.2);
+        }
+
+        /* 副按钮样式 */
+        .download-buttons .alt-btn {
+            background: #fff;
+            color: #FF5F5F;
+            border: 2px solid #FF5F5F;
+            transition: all 0.3s ease;
+        }
+
+        .download-buttons .alt-btn:hover {
+            background: linear-gradient(270deg, #FF5F5F 0%, #FF8F8F 100%);
+            color: #fff;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 95, 95, 0.2);
+        }
+
+        /* 更新日志样式 */
+        .changelog {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+        }
+
+        .changelog-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #EEE;
+        }
+
+        .changelog-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .changelog-version {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .changelog-content {
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .changelog-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px;
+            color: #111;
+        }
+
+        .changelog-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .changelog-content li {
+            margin-bottom: 8px;
+        }
+
+        /* 其他版本下载区域 */
+        .other-downloads {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .other-downloads h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .other-downloads h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111;
+            margin: 30px 0 15px;
+            padding-left: 15px;
+            border-left: 4px solid #FF5F5F;
+        }
+
+        .other-downloads ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .other-downloads li {
+            margin-bottom: 15px;
+        }
+
+        .download-item-btn {
+            width: 100%;
+            padding: 15px 20px;
+            background: #F8F9FA;
+            border: 1px solid #EEE;
+            border-radius: 10px;
+            font-size: 15px;
+            color: #444;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .download-item-btn:hover {
+            background: #FFF6F6;
+            border-color: #FFE0E0;
+            color: #FF5F5F;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .download-section {
+                padding: 80px 0;
+            }
+
+            .version-info h1 {
+                font-size: 36px;
+            }
+
+            .download-buttons,
+            .changelog,
+            .other-downloads {
+                padding: 30px 20px;
+            }
+
+            .other-downloads h2 {
+                font-size: 28px;
+            }
+
+            .download-buttons {
+                padding: 30px 20px;
+            }
+
+            .download-buttons .theme-btn {
+                font-size: 16px;
+                padding: 12px 30px;
+                min-width: 160px;
+            }
+        }
+    </style>
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Cherry Studio 更新日志" href="https://cherry-rss.ocool.online/" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Main Header-->
+        <header class="main-header header-style-one">
+        
+        	<!-- Main Box -->
+        	<div class="main-box">
+            	<div class="auto-container">
+                    <div class="outer-container">
+                        <!--Logo Box-->
+                        <div class="logo-box">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/cherry_logo.png" alt="Cherry Studio">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--Nav Outer-->
+                        <div class="menu-area two bg-color">
+                             <!--Mobile Navigation Toggler-->
+                             <div class="mobile-nav-toggler">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+                                    <ul class="navigation">
+                                        <li><a href="/index.html">主页</a>
+                                        </li>
+                                        <li class="current"><a href="/download.html">下载</a>
+                                        </li>
+                                        <li class="dropdown"><a href="https://docs.cherry-ai.com/">文档</a>
+                                            <ul>
+                                                <li><a href="https://docs.cherry-ai.com/cherrystudio">CherryStudio简介</a></li>
+                                                <li><a href="https://docs.cherry-ai.com/cherrystudio/pre-basic/installation">基础教程</a></li>
+                                                <li ><a href="https://docs.cherry-ai.com/cherrystudio/advanced-basic/knowledge-base">进阶教程</a></li>
+                                                <li><a href="https://docs.cherry-ai.com/cherrystudio/contribution/code">项目贡献</a></li>
+                                                <li><a href="https://docs.cherry-ai.com/cherrystudio/question-contact/questions">问题&反馈</a></li>
+                                            </ul>                                      
+                                           <li><a href="https://docs.cherry-ai.com/cherry-studio/contact-us/questions">联系我们</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                            
+                            <div class="outer-box">
+                                <!--Search Box-->
+                                <div class="search-box-outer">
+                                    <div class="dropdown">
+                                        <button class="search-box-btn one search-toggler"><span class="icon-1"></span></button>
+                                    </div>
+                                </div>
+                                
+                                <!--Button-->
+                                <div class="start_trils_btn">
+                                    <a href="https://github.com/kangfenmao/cherry-studio" class="theme-btn" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nav Outer End-->
+                    </div>    
+                </div>
+            </div>
+            
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-container">
+                        <!--Logo-->
+                        <div class="logo">
+                            <a href="index.html" class="img-responsive"><img src="assets/images/cherry_logo.png" alt="" title=""></a>
+                        </div>
+                        
+                        <!--Right Col-->
+                        <div class="right-col">
+                            <div class="menu-area">
+                                <nav class="main-menu">
+                                        <!--保持此处为空 / 菜单将通过 Javascript 动态加载-->
+                                </nav>
+
+                                <div class="outer-box">
+                                    <div class="search-box-outer">
+                                        <div class="dropdown">
+                                            <button class="search-box-btn one search-toggler"><span class="icon-1"></span></button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Button-->
+                                    <div class="start_trils_btn">
+                                        <a href="https://github.com/kangfenmao/cherry-studio" class="theme-btn" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Main Menu End-->
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!--End Sticky Header-->
+        </header>
+        <!--End Main Header -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="icon-13"></i></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo_light.png" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- 下载页面内容 -->
+        <section class="download-section">
+            <div class="auto-container">
+                <div class="version-info">
+                    <h1 id="version-title">正在获取版本信息...</h1>
+                    <p id="published-at"></p>
+                </div>
+                <!-- 主下载按钮 -->
+                <div class="download-buttons">
+                    <div class="system-info">
+                        <p>当前系统: <strong id="system-name">正在检测...</strong></p>
+                        <p>推荐版本: <strong id="recommended-version">正在获取...</strong></p>
+                    </div>
+                    <div class="button-group">
+                        <button id="main-download-btn" class="theme-btn">立即下载</button>
+                        <button onclick="document.querySelector('.other-downloads').scrollIntoView({ behavior: 'smooth' })" class="theme-btn alt-btn">下载其他版本</button>
+                    </div>
+                </div>
+                <!-- 更新日志 -->
+                <div id="changelog" class="changelog">
+                    <!-- 更新日志内容将动态加载 -->
+                </div>
+                <!-- 其他版本下载 -->
+                <div class="other-downloads">
+                    <h2>其他版本下载</h2>
+                    <ul id="download-list">
+                        <!-- 其他版本的下载链接将动态生成 -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <!-- main-footer -->
+    <footer class="main-footer">
+        <div class="widget-section">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget logo-widget">
+                            <figure class="footer-logo"><a href="index.html"><img src="assets/images/cherry_logo.png" alt=""></a></figure>
+                            <p>CherryStudio是一个支持多平台的AI客户端，我们致力于让更多人能够享受到AI带来的便利。</p>
+                            <ul class="social-links">
+                                <li><a href="https://x.com/kangfenmao" class="social-icon"><img src="assets/images/icons/x.svg" alt="X Icon"></a></li>
+                                <li><a href="https://t.me/CherryStudioAI" class="social-icon"><img src="assets/images/icons/tg.svg" alt="Telegram Icon"></a></li>
+                                <li><a href="https://github.com/CherryHQ/cherry-studio" class="social-icon"><img src="assets/images/icons/github.svg" alt="GitHub Icon"></a></li>
+                                <li><a href="https://www.producthunt.com/products/cherry-studio" class="social-icon"><img src="assets/images/icons/p.svg" alt="P Icon"></a></li>
+                                <li><a href="javascript:void(0);" class="social-icon" onclick="copyRSSLink()"><img src="assets/images/icons/rss.svg" alt="RSS Icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget links-widget ml_40">
+                            <div class="widget-title">
+                                <h4>CherryStudio</h4>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <li><a href="https://github.com/kangfenmao/cherry-studio" target="_blank">github页面</a></li>
+                                    <li><a href="https://docs.cherry-ai.com" target="_blank">使用文档</a></li>
+                                    <li><a href="https://github.com/kangfenmao/cherry-studio/issues" target="_blank">Issues</a></li>
+                                    <li><a href="https://github.com/CherryHQ/cherry-studio/fork" target="_blank">Fork</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-title">
+                                <h4>友情链接</h4>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <li><a href="https://one.ocoolai.com" target="_blank">ocoolAI</a></li>
+                                    <li><a href="https://hao.logosc.cn/p/3748" target="_blank">神器集</a></li>
+                                    <li><a href="https://top.aibase.com/tool/cherry-studio" target="_blank">AIBase</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget contact-widget">
+                            <div class="widget-title">
+                                <h4>联系我们</h4>
+                            </div>
+                            <p>如果您有使用上的问题可以先查看文档或者在<a href="https://t.me/CherryStudioAI" target="_blank">Telegram频道</a>中提问。<br>如果有其他问题可以发送邮件至<a href="mailto:kangfenmao@qq.com">kangfenmao@qq.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer-bottom text-center"> 
+        <div class="auto-container">
+            <div class="copyright"><p>Copyright © 2024 Cherry Studio, Inc. <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2021031071号-3</a></p></div>
+        </div>
+    </div>
+    </footer>
+<!-- main-footer end -->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+    <!-- 引入必要的脚本 -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- 引入 marked.js，用于解析 Markdown 格式的更新日志 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 引入 download.js 脚本 -->
+    <script src="assets/js/download.js"></script>
+    <!-- 引入搜索功能脚本 -->
+    <script src="assets/js/search.js"></script>
+
+    <!-- 加载动画控制脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 监听所有资源加载完成
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    // 隐藏加载动画
+                    document.querySelector('.preloader').classList.add('loaded');
+                    // 显示页面内容
+                    document.querySelector('.page-wrapper').classList.add('loaded');
+                }, 500); // 添加一个小延迟，确保动画流畅
+            });
+
+            // 如果加载时间超过3秒，也显示页面内容（防止加载卡住）
+            setTimeout(function() {
+                document.querySelector('.preloader').classList.add('loaded');
+                document.querySelector('.page-wrapper').classList.add('loaded');
+            }, 3000);
+        });
+    </script>
+    <script>
+        function copyRSSLink() {
+            const rssLink = 'https://cherry-rss.ocool.online/';
+            navigator.clipboard.writeText(rssLink).then(() => {
+                const messageBox = document.getElementById('copy-message');
+                messageBox.style.display = 'block'; // 显示提示框
+                setTimeout(() => {
+                    messageBox.style.display = 'none'; // 3秒后隐藏提示框
+                }, 3000);
+            }).catch(err => {
+                console.error('复制失败:', err);
+            });
+        }
+    </script>
+    
+<div id="copy-message" class="copy-message" style="display: none;">已复制 RSS 链接!</div>
+</body>
+</html>
