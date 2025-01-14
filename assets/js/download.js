@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         arch: ua.includes('win64') || ua.includes('wow64') ? 'x64' : 'x86'
                     };
                 }
-                
+
                 // macOS 系统检测
                 if (ua.includes('mac') || platform.includes('mac')) {
                     // 检测是否为 Apple Silicon
                     const isAppleSilicon = ua.includes('arm64') || ua.includes('mac') && window.navigator.cpuClass === 'arm64';
-                    
+
                     return {
                         name: `Cherry-Studio-${cleanVersion}-${isAppleSilicon ? 'arm64' : 'x64'}.dmg`,
                         url: `https://cherrystudio.ocool.online/Cherry-Studio-${cleanVersion}-${isAppleSilicon ? 'arm64' : 'x64'}.dmg`,
@@ -123,14 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 设置系统提示和下载信息
                 const systemInfoElement = document.createElement('div');
                 systemInfoElement.className = 'system-info';
-                const matchedDownload = downloads.find(item => 
+                const matchedDownload = downloads.find(item =>
                     item.name.toLowerCase().includes(systemInfo.name.toLowerCase())
                 );
                 systemInfoElement.innerHTML = `
                     <p>您的系统为 <strong>${systemInfo.type}</strong></p>
                     <p>建议下载 <strong>${systemInfo.name}</strong>${matchedDownload ? ` (${matchedDownload.size})` : ''}</p>
                 `;
-                
+
                 // 插入系统信息
                 downloadButtons.insertBefore(systemInfoElement, downloadButtons.firstChild);
 
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const li = document.createElement('li');
                     const button = document.createElement('button');
                     button.className = 'download-item-btn';
-                    
+
                     // 查找匹配的下载信息以获取文件大小
                     const matchedDownload = downloads.find(item => {
                         // 添加调试日志
@@ -181,21 +181,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         });
                         return item.name.toLowerCase().includes(name.toLowerCase());
                     });
-                    
+
                     // 如果没找到匹配项，也记录一下
                     if (!matchedDownload) {
                         console.log('No size found for:', name);
                         console.log('Available downloads:', downloads);
                     }
-                    
+
                     // 构建按钮文本
                     const buttonText = `${name}${matchedDownload ? ` (${matchedDownload.size})` : ''} - ${desc}`;
                     button.textContent = buttonText;
-                    
+
                     button.addEventListener('click', function() {
                         window.location.href = url;
                     });
-                    
+
                     li.appendChild(button);
                     downloadList.appendChild(li);
                 });
@@ -226,7 +226,7 @@ function detectSystem() {
             architecture = '32位';
             systemName = 'Windows (32位)';
         }
-    } 
+    }
     // 检测 macOS 系统
     else if (userAgent.includes('mac')) {
         systemName = 'macOS';
@@ -238,7 +238,7 @@ function detectSystem() {
             architecture = 'Intel';
             systemName = 'macOS (Intel)';
         }
-    } 
+    }
     // 检测 Linux 系统
     else if (userAgent.includes('linux')) {
         systemName = 'Linux';
@@ -262,7 +262,7 @@ function detectSystem() {
     document.getElementById('system-name').textContent = systemName;
 
     // 从 API 获取最新版本信息
-    fetch('https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest')
+    fetch('https://api.github.com/repos/CherryHQ/cherry-studio/releases/latest')
         .then(response => response.json())
         .then(data => {
             const version = data.tag_name;
@@ -296,7 +296,7 @@ function detectSystem() {
             console.error('获取版本信息失败：', error);
             document.getElementById('recommended-version').textContent = '获取版本信息失败';
         });
-    
+
     // 显示系统信息区域
     document.querySelector('.system-info').classList.add('loaded');
 }
